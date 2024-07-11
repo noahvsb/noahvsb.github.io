@@ -1,0 +1,11 @@
+body {
+    background-image: url("images/sylveon.png");
+}
+
+p {
+    font-family: verdana;
+}
+
+img {
+    border: 2px solid black;
+}
