@@ -3,7 +3,7 @@
 
 <head>
     <title>Page Not Found</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link id="mainStylesheet" rel="stylesheet" href="assets/css/main.css">
   </head>
 
 <body>
@@ -12,7 +12,8 @@
 
   <script>
     const path = window.location.pathname;
-    const stylesheet = document.getElementById('stylesheet');
+    console.log(path);
+    const stylesheet = document.getElementById('mainStylesheet');
 
     // if path is shitpost, use the shitpost 404
     if (path.includes('/archive/shitpost')) {
