@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Website for noahvsb, currently just a shitpost of random stuff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>noahvsb</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <style>
+        #explosion-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #explosion-overlay img {
+            width: 60%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="https://noahvsb.github.io/" target="_blank">recommended site</a> <b>10/10</b>
+        <br>
+        <small>- me</small>
+        <br><br>
+        <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">other recommended site</a> <b>10/10</b>
+        <br>
+        <small>- Kaya-Sem</small>
+        <br><br>
+        <a href="https://kaya-sem.com/" target="_blank">a fantastic site</a> <b>10/10</b>
+        <br>
+        <small>- Everyone</small>
+        <br><br>
+        <a href="https://github.com/KiandroDW/Best-Pokemon" target="_blank">great project!</a> <b>10/10</b>
+        <br>
+        <small> - Kiandro</small>
+        <br><br>
+        <a href="https://www.marxists.org/reference/archive/mao/selected-works/volume-4/mswv4_22.htm"
+            target="_blank">Manifesto of the Chinese People's Liberation Army!</a>
+        <br><br>
+        <a href="https://www.its.caltech.edu/~matilde/ScaleAnarchy.pdf" target="_blank">THE PROBLEM OF SCALE IN
+            ANARCHISM AND THE CASE FOR CYBERNETIC COMMUNISM</a>
+    </p>
+
+    <img src="src/images/thumbs_up.jpg" alt="image" style="width:500px; transition: transform 0.5s;"
+        title="hey cutie <3" onclick="clicked(this)">
+    <img src="src/images/ally.jpg" alt="ally" style="height:321px; transition: transform 0.5s;" title="This cutie <3"
+        onclick="clicked(this)">
+    <img src="src/images/livepeterreaction.gif" alt="image" style="width:500px; transition: transform 0.5s;"
+
+        title="Live Peter Reaction" onclick="clicked(this)">
+
+    <div id="explosion-overlay">
+        <img src="src/images/cat.gif" alt="BOOM!">
+    </div>
+
+    <script>
+        function clicked(img) {
+            img.style.transform = "rotate(360deg)";
+            setTimeout(() => {
+                img.style.transform = "rotate(0deg)";
+            }, 500);
+        }
+
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                const overlay = document.getElementById("explosion-overlay");
+                overlay.style.display = "flex";
+                setTimeout(() => {
+                    overlay.style.display = "none";
+                }, 4500);
+            }, 7000);
+        });
+    </script>
+
+    <!-- Noah is the king of codesmells -->
+</body>
+
+</html>
