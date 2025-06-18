@@ -4,27 +4,31 @@
 <head>
     <title>Page Not Found</title>
     <link id="mainStylesheet" rel="stylesheet" href="assets/css/main.css">
-  </head>
+</head>
 
 <body>
-  <h1>404</h1>
-  <p>Page Not Found</p>
+    <script>
+        const path = window.location.pathname;
+        const stylesheet = document.getElementById('mainStylesheet');
 
-  <script>
-    const path = window.location.pathname;
-    const stylesheet = document.getElementById('mainStylesheet');
+        // shitpost 404
+        if (path.includes('/archive/shitpost')) {
+            document.title = "gene vetten";
+            stylesheet.href = "src/styles.css";
 
-    // if path is shitpost, use the shitpost 404
-    if (path.includes('/archive/shitpost')) {
-      document.title = "gene vetten";
-      stylesheet.href = "src/styles.css";
-
-      document.body.innerHTML = `
-        <h1>404</h1>
-        <p>gene vetten</p>
-        <img src="src/images/bye.gif" alt="image" style="width:500px; transition: transform 0.5s;">
-      `;
-    }
-  </script>
+            document.body.innerHTML = `
+                <h1>404</h1>
+                <p>gene vetten</p>
+                <img src="src/images/bye.gif" alt="image" style="width:500px; transition: transform 0.5s;">
+            `;
+        } 
+        // default 404
+        else {
+            document.body.innerHTML = `
+                <h1>404</h1>
+                <p>Page Not Found</p>
+            `;
+        }
+    </script>
 </body>
 </html>
