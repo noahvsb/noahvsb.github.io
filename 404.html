@@ -12,18 +12,17 @@
 
   <script>
     const path = window.location.pathname;
-    console.log(path);
     const stylesheet = document.getElementById('mainStylesheet');
 
     // if path is shitpost, use the shitpost 404
     if (path.includes('/archive/shitpost')) {
       document.title = "gene vetten";
-      stylesheet.href = "archive/shitpost/src/styles.css";
+      stylesheet.href = "src/styles.css";
 
       document.body.innerHTML = `
         <h1>404</h1>
         <p>gene vetten</p>
-        <img src="archive/shitpost/src/images/bye.gif" alt="image" style="width:500px; transition: transform 0.5s;">
+        <img src="src/images/bye.gif" alt="image" style="width:500px; transition: transform 0.5s;">
       `;
     }
   </script>
