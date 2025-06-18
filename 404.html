@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+
+<body>
+  <h1>404</h1>
+  <p>Page Not Found</p>
+
+  <script>
+    const path = window.location.pathname;
+    const stylesheet = document.getElementById('stylesheet');
+
+    // if path is shitpost, use the shitpost 404
+    if (path.includes('/archive/shitpost')) {
+      document.title = "gene vetten";
+      stylesheet.href = "archive/shitpost/src/styles.css";
+
+      document.body.innerHTML = `
+        <h1>404</h1>
+        <p>gene vetten</p>
+        <img src="archive/shitpost/src/images/bye.gif" alt="image" style="width:500px; transition: transform 0.5s;">
+      `;
+    }
+  </script>
+</body>
+</html>
