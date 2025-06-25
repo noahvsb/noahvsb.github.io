@@ -19,3 +19,9 @@ button {
     display: flex;
     gap: 10px;
 }
+
+/* meant to use the normal text in stuff like headers */
+.normal-text {
+    font-size: medium;
+    font-weight: normal;
+}
