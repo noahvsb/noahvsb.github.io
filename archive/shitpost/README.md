@@ -1,3 +1,3 @@
 shitpost
 
-link: https://noahvsb.github.io/
+link: https://noahvsb.github.io/archive/shitpost/
